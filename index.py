@@ -6,7 +6,16 @@ opcao = st.sidebar.selectbox('Sobre o Streamlit',
                              ('Historia Do Streamlit', 'Funcionalidades Do Streamlit',
                               'Projeto Streamlit')
                              )
-sidebar = True
+def open_sidebar():
+    js = """
+    <script>
+    document.getElementsByClassName('sidebar-container')[0].style = 'display: block'
+    </script>
+    """
+    st.markdown(js, unsafe_allow_html=True)
+
+# Chamando a função para abrir a barra lateral
+open_sidebar()
 st.sidebar.text('Alunos:\n'
                 'Daniel\n'
                 'Henrique\n'
