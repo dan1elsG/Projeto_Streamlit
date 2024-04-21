@@ -6,7 +6,7 @@ opcao = st.sidebar.selectbox('Sobre o Streamlit',
                              ('Historia Do Streamlit', 'Funcionalidades Do Streamlit',
                               'Projeto Streamlit')
                              )
-
+sidebar = True
 st.sidebar.text('Alunos:\n'
                 'Daniel\n'
                 'Henrique\n'
